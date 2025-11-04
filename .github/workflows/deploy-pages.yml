@@ -34,8 +34,8 @@ jobs:
         env:
           PUBLIC_URL: /${{ github.event.repository.name }}
           VITE_BASE_PATH: /${{ github.event.repository.name }}/dist
-          BASE_URL: /${{ github.event.repository.name }}          BASE_URL: /Portifolio_2/
-          HOMEPAGE: /${{ github.event.repository.name }}io_2
+          BASE_URL: /${{ github.event.repository.name }}
+          HOMEPAGE: /${{ github.event.repository.name }}
 
       - name: Configure Pages
         uses: actions/configure-pages@v4

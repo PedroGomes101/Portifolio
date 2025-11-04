@@ -32,7 +32,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_BASE: /Portifolio_2/
+          VITE_BASE: /Portifolio/
 
       - name: Configure Pages
         uses: actions/configure-pages@v4

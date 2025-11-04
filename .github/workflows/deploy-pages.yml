@@ -32,10 +32,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          PUBLIC_URL: /Portifolio_2
-          VITE_BASE_PATH: /Portifolio_2/
-          BASE_URL: /Portifolio_2/
-          HOMEPAGE: /Portifolio_2
+          VITE_BASE: /Portifolio_2/
 
       - name: Configure Pages
         uses: actions/configure-pages@v4

@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "homepage": "https://pedrogomes101.github.io/Portifolio",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
   },

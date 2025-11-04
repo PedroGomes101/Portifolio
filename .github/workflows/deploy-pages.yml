@@ -32,24 +32,28 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          PUBLIC_URL: /Portifolio_2
-          VITE_BASE_PATH: /Portifolio_2/
+          PUBLIC_URL: /${{ github.event.repository.name }}
+          VITE_BASE_PATH: /${{ github.event.repository.name }}/dist
+          BASE_URL: /${{ github.event.repository.name }}          BASE_URL: /Portifolio_2/
+          HOMEPAGE: /${{ github.event.repository.name }}io_2
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v4
+      - name: Configure Pages      - name: Configure Pages
+        uses: actions/configure-pages@v4es@v4
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: ./dist
+      - name: Upload Pages artifact Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4upload-pages-artifact@v4
+        with:        with:
+          path: ./dist path: ./dist
 
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+      url: ${{ steps.deployment.outputs.page_url }}teps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latestn: ubuntu-latest
     needs: build
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
+
+
+        uses: actions/deploy-pages@v4        id: deployment        id: deployment
         uses: actions/deploy-pages@v4

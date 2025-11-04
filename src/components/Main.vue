@@ -14,7 +14,7 @@
                 <a class="social-btn" href="https://www.instagram.com/pedrog_carvalh" aria-label="Instagram">
                     <img :src="instagram" alt="Instagram" />
                 </a>
-                <a class="social-btn" href="https://www.linkedin.com/in/pedro-gomes-26383925b" aria-label="LinkedIn">
+                <a class="social-btn" href="https://www.linkedin.com/in/pedro-gomes-de-carvalho-26383925b" aria-label="LinkedIn">
                     <img :src="linkedin" alt="inkedIn" />
                 </a>
             </nav>

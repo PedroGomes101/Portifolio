@@ -37,13 +37,13 @@ jobs:
           BASE_URL: /${{ github.event.repository.name }}          BASE_URL: /Portifolio_2/
           HOMEPAGE: /${{ github.event.repository.name }}io_2
 
-      - name: Configure Pages      - name: Configure Pages
-        uses: actions/configure-pages@v4es@v4
+      - name: Configure Pages
+        uses: actions/configure-pages@v4
 
-      - name: Upload Pages artifact Upload Pages artifact
-        uses: actions/upload-pages-artifact@v4upload-pages-artifact@v4
-        with:        with:
-          path: ./dist path: ./dist
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./dist
 
   deploy:
     environment:

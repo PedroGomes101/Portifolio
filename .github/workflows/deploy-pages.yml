@@ -32,10 +32,10 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          PUBLIC_URL: /${{ github.event.repository.name }}
-          VITE_BASE_PATH: /${{ github.event.repository.name }}/dist
-          BASE_URL: /${{ github.event.repository.name }}
-          HOMEPAGE: /${{ github.event.repository.name }}
+          PUBLIC_URL: /Portifolio_2
+          VITE_BASE_PATH: /Portifolio_2/
+          BASE_URL: /Portifolio_2/
+          HOMEPAGE: /Portifolio_2
 
       - name: Configure Pages
         uses: actions/configure-pages@v4
